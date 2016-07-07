@@ -12,4 +12,4 @@
 2)  UnixThreadDemo
 
     compile cmd: gcc -o test UnixThreadDemo.c -lpthread
-    run: /test
+    run: /test -s 0x100000 -n 5000
