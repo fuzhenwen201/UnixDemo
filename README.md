@@ -4,10 +4,11 @@
 
     compile cmd: gcc -o test UnixSharememoryAndSemaphoreDemo.c
     run: ./test
+    
     check system share memory cmd: 
-        ipcs -m
+        #ipcs -m
     remove system share memory cmd:
-      ipcrm -m shmid
+        #ipcrm -m shmid
 
 2)  UnixThreadDemo
 
