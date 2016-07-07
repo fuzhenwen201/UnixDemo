@@ -1,12 +1,15 @@
-# UnixSharememoryAndSemaphoreDemo
-this is a shm&amp;sem demo for learning unix sharememory&amp;semaphore using in multiprocess
+# UnixDemo
 
-compile cmd: gcc -o test UnixSharememoryAndSemaphoreDemo.c
+1)  UnixSharememoryAndSemaphoreDemo
 
-run: ./test
+    compile cmd: gcc -o test UnixSharememoryAndSemaphoreDemo.c
+    run: ./test
+    check system share memory cmd: 
+        ipcs -m
+    remove system share memory cmd:
+      ipcrm -m shmid
 
-check system share memory cmd: 
-  ipcs -m
+2)  UnixThreadDemo
 
-remove system share memory cmd:
-  ipcrm -m shmid
+    compile cmd: gcc -o test UnixThreadDemo.c -lpthread
+    run: /test
